@@ -30,7 +30,7 @@ const schedules = {
         "2": [
             "<font color='red'>ຊ/ມ</font> 1:EX. ພາສາອັງກິດ2: (FNS209) <font color='balack'>ອຈ.ຄຳປອນ</font>",
             "<font color='red'>ຊ/ມ</font> 2:EX. ພາສາອັງກິດ2: (FNS209) <font color='balack'>ອຈ.ຄຳປອນ</font>",
-            "<font color='red'>ຊ/ມ</font> 3:Lap ການອອກແບບເວບ: (CS007) <font color='balack'>ອຈ.ອາຈານວິໄລສັກ</font>",
+            "<font color='red'>ຊ/ມ</font> 3:Lap ການອອກແບບເວບ: (CS007) <font color='balack'>ອຈ.ວິໄລສັກ</font>",
             "<font color='Green'>ຊ/ມ</font> 4: ວ່າງ"
         ],
         "3": [
