@@ -7,7 +7,7 @@ function showSchedule() {
     if (schedules[room] && schedules[room][day]) {
         scheduleText = schedules[room][day].map(item => `<p>${item}</p>`).join('');
     } else {
-        scheduleText = "<p>ເລືອກຫ້ອງຮຽນດີໆ</p>";
+        scheduleText = "<p>ເລືອກຫ້ອງຮຽນດີໆ!!!!</p>";
     }
 
     scheduleDisplay.innerHTML = scheduleText;
@@ -61,7 +61,7 @@ const schedules = {
         ],
         "2": [
             "<font color='red'>ຊ/ມ</font> 1:Lap. ພື້ນຖານເວບໂປຣແກຣມ: (CS001) <font color='balack'>ອຈ.ມູນພິນ</font>",
-            "<font color='red'>ຊ/ມ</font> 2:Lap. ພື້ນຖານເວບໂປຣແກຣມ: (CS001) <font color='balack'>ອຈ.ມູນພິນ</font>",
+            "<font color='red'>ຊ/ມ</font> 2:Lap. ການສື່ສານຂໍ້ມູນ ແລະ ເຄືອຂ່າຍ: (CS001) <font color='balack'>ອຈ.ຄຳຫຼ້າ</font>",
             "<font color='Green'>ຊ/ມ</font> 3: ວ່າງ",
             "<font color='Green'>ຊ/ມ</font> 4: ວ່າງ"
         ],
