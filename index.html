@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css.css">
+    <title>table</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>ເລືອກຫ້ອງ</h1>
+        <select id="roomSelect" onchange="updateDays()">
+            <option value="">ເລືອກຫ້ອງ</option>
+            <option value="3">CW3</option>
+            <option value="2">CW2</option>
+        </select>
+        <h1>ເລືອກມື້ຮຽນ</h1>
+        <select id="daySelect" disabled>
+            <option value="">ເລືອກມື້ຮຽນ</option>
+            <option value="1">ຈັນ</option>
+            <option value="2">ຄານ</option>
+            <option value="3">ພຸດ</option>
+            <option value="4">ພະຫັດ</option>
+            <option value="5">ສຸກ</option>
+        </select>
+        <button onclick="showSchedule()">ສະແດງ table</button>
+        <div id="scheduleDisplay" class="schedule"></div>
+    </div>
+
+    <script src="./static/js.js"></script>
+
+</body>
+
+</html>
