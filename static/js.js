@@ -49,7 +49,7 @@ const schedules = {
             "<font color='red'>ຊ/ມ</font> 1:Lect. ລະບົບຂໍ້ມູນ: (MA205) <font color='balack'>ອຈ.ສົມມິດ</font>",
             "<font color='red'>ຊ/ມ</font> 2:Lap. ລະບົບຂໍ້ມູນ: (CS007) <font color='balack'>ອຈ.ມູນພິນ</font>",
             "<font color='red'>ຊ/ມ</font> 3:EX. ຄະນິດສາດ2: (FNS207) <font color='balack'>ອຈ.ພູທອນ</font>",
-            "<font color='red'>ຊ/ມ</font> 4:Lect. ລາວສືກສາ2: (FNS405) <font color='balack'>ອຈ.ສີທພນົນໄຊ</font>"
+            "<font color='red'>ຊ/ມ</font> 4:Lect. ລາວສືກສາ2: (FNS405) <font color='balack'>ອຈ.ສີທະນົນໄຊ</font>"
         ]
     },
     "2": { //ຫ້ອງ 2
@@ -75,13 +75,13 @@ const schedules = {
             "<font color='red'>ຊ/ມ</font> 1:Lect. ພື້ນຖານໂປຣແກຣມມິ່ງ: (BII08) <font color='balack'>ອຈ.ມູນພິນ</font>",
             "<font color='Green'>ຊ/ມ</font> 2: ວ່າງ",
             "<font color='red'>ຊ/ມ</font> 3:EX. ພາສາອັງກິດ2: (FNS201) <font color='balack'>ອຈ.ຄຳປອນ</font>",
-            "<font color='Green'>ຊ/ມ</font> 4:Lap. ການອອກແບບເວບ: (CS005) <font color='balack'>ອຈ.ສຸກປະເສີດ</font>"
+            "<font color='red'>ຊ/ມ</font> 4:Lap. ການອອກແບບເວບ: (CS005) <font color='balack'>ອຈ.ສຸກປະເສີດ</font>"
         ],
         "5": [
             "<font color='red'>ຊ/ມ</font> 1:Lect. ລະບົບຂໍ້ມູນ: (MA205) <font color='balack'>ອຈ.ສົມມິດ</font>",
             "<font color='red'>ຊ/ມ</font> 2:EX. ຄະນິດສາດ2: (FNS210) <font color='balack'>ອຈ.ພູທອນ</font>",
             "<font color='Green'>ຊ/ມ</font> 3: ວ່າງ",
-            "<font color='red'>ຊ/ມ</font> 4:Lect. ລາວສືກສາ2: (FNS405) <font color='balack'>ອຈ.ສີທພນົນໄຊ</font>"
+            "<font color='red'>ຊ/ມ</font> 4:Lect. ລາວສືກສາ2: (FNS405) <font color='balack'>ອຈ.ສີທະນົນໄຊ</font>"
         ]
     }
 };
