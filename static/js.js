@@ -1,7 +1,48 @@
+const scheduleDisplay = document.getElementById("scheduleDisplay");
+
+function updateDays() {
+    const roomSelect = document.getElementById("roomSelect");
+    const daySelect = document.getElementById("daySelect");
+    const room = roomSelect.value;
+
+    daySelect.innerHTML = '<option value="">ເລືອກມື້ຮຽນ</option>';
+
+    if (room) {
+        const days = Object.keys(schedules[room]);
+        let today = new Date().getDay(); // 0 = ອາທິດ, 1 = ຈັນ, ..., 6 = ສະວາທີ
+
+        if (today === 0 || today === 6) {
+            today = 1; // ຖ້າເປັນອາທິດ ຫລື ເສົາ, ປັບໃຫ້ເປັນຈັນ
+        }
+
+        days.forEach(day => {
+            const dayNames = ["ຈັນ", "ຄານ", "ພຸດ", "ພະຫັດ", "ສຸກ"];
+            const dayName = dayNames[day - 1];
+            const option = document.createElement("option");
+            option.value = day;
+            option.textContent = dayName;
+            daySelect.appendChild(option);
+        });
+
+        // ປັບໃຫ້ເລືອກມື້ປັດຈຸບັນອັດຕະໂນມັດ
+        if (days.includes(today.toString())) {
+            daySelect.value = today.toString();
+        } else {
+            daySelect.value = days[0];
+        }
+
+        // ສະແດງຕາຕະລາງທັນທີ
+        showSchedule();
+        daySelect.disabled = false;
+    } else {
+        daySelect.disabled = true;
+        scheduleDisplay.innerHTML = "<p>ກະລຸນາເລືອກຫ້ອງຮຽນ</p>";
+    }
+}
+
 function showSchedule() {
     const room = document.getElementById("roomSelect").value;
     const day = document.getElementById("daySelect").value;
-    const scheduleDisplay = document.getElementById("scheduleDisplay");
     let scheduleText = "";
 
     if (schedules[room] && schedules[room][day]) {
@@ -13,12 +54,8 @@ function showSchedule() {
     scheduleDisplay.innerHTML = scheduleText;
 }
 
-function updateDays() {
-    const roomSelect = document.getElementById("roomSelect");
-    const daySelect = document.getElementById("daySelect");
-    daySelect.disabled = roomSelect.value === "";
-}
-
+document.getElementById("roomSelect").addEventListener("change", updateDays);
+document.getElementById("daySelect").addEventListener("change", showSchedule);
 const schedules = {
     "3": {
         "1": [
@@ -34,9 +71,9 @@ const schedules = {
             "<font color='Green'>ຊ/ມ</font> 4: ວ່າງ"
         ],
         "3": [
-            "<font color='red'>ຊ/ມ</font> 1:Lect. ການສື່ສານຂໍ້ມູນ ແລະ ເຄືອຂ່າຍ: (MA205) <font color='balack'>ອຈ.ຄຳກອນ</font>",
+            "<font color='Green'>ຊ/ມ</font> 1: ວ່າງ",
             "<font color='red'>ຊ/ມ</font> 2:Lect. ການອອກແບບເວບ: (MA205) <font color='balack'>ອຈ.ມູນພິນ</font>",
-            "<font color='Green'>ຊ/ມ</font> 3: ວ່າງ",
+            "<font color='red'>ຊ/ມ</font> 3:Lect. ການສື່ສານຂໍ້ມູນ ແລະ ເຄືອຂ່າຍ: (MA205) <font color='balack'>ອຈ.ຄຳກອນ</font>",
             "<font color='Green'>ຊ/ມ</font> 4: ວ່າງ"
         ],
         "4": [
@@ -66,9 +103,9 @@ const schedules = {
             "<font color='Green'>ຊ/ມ</font> 4: ວ່າງ"
         ],
         "3": [
-            "<font color='red'>ຊ/ມ</font> 1:Lect. ການສື່ສານຂໍ້ມູນ ແລະ ເຄືອຂ່າຍ: (MA205) <font color='balack'>ອຈ.ຄຳກອນ</font>",
+            "<font color='Green'>ຊ/ມ</font> 1: ວ່າງ",
             "<font color='red'>ຊ/ມ</font> 2:Lect. ການອອກແບບເວບ: (MA205) <font color='balack'>ອຈ.ມູນພິນ</font>",
-            "<font color='Green'>ຊ/ມ</font> 3: ວ່າງ",
+            "<font color='red'>ຊ/ມ</font> 3:Lect. ການສື່ສານຂໍ້ມູນ ແລະ ເຄືອຂ່າຍ: (MA205) <font color='balack'>ອຈ.ຄຳກອນ</font>",
             "<font color='Green'>ຊ/ມ</font> 4: ວ່າງ"
         ],
         "4": [
