@@ -25,6 +25,7 @@ body {
 
 select,
 button {
+    font-family: 'Phetsarath OT';
     padding: 10px;
     margin-top: 10px;
     width: 100%;
